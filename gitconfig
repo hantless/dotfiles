@@ -1,0 +1,52 @@
+[user]
+	name = Frédéric Arijs
+	email = email@domain.com 
+
+[color]
+	ui = auto
+
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset'
+	oops = commit --amend -C HEAD
+
+[core]
+	pager = cat
+
+	# Use Sublime Text wrapper
+	editor = subl -w
+
+	whitespace = -trailing-space
+	ignorecase = false
+
+[diff]
+	mnemonicPrefix = true
+	wordRegex = .
+
+[fetch]
+	recurseSubmodules = on-demand
+
+[grep]
+	extendedRegexp = true
+
+[log]
+	abbrevCommit = true
+
+[merge]
+	conflictStyle = diff3
+
+[mergetool]
+	keepBackup = false
+	keepTemporaries = false
+	prompt = false
+
+[pull]
+	rebase = true
+
+[push]
+	default = upstream
+
+[status]
+	submoduleSummary = true
