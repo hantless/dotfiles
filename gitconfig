@@ -6,11 +6,21 @@
 	ui = auto
 
 [alias]
-	st = status
-	ci = commit
-	co = checkout
-	lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset'
-	oops = commit --amend -C HEAD
+    st = status
+    ci = commit
+    co = checkout
+    cob = checkout -b
+    cos = checkout staging
+    com = checkout main
+    lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset'
+    oops = commit --amend -C HEAD
+    poh = push origin HEAD
+    puh = push -u origin HEAD
+    m = merge --no-ff
+    b = branch -vv
+    bd = branch -d
+    bD = branch -D
+    bdo = push origin --delete
 
 [core]
 	pager = cat
